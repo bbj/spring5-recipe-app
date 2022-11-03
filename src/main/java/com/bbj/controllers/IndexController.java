@@ -8,6 +8,7 @@ public class IndexController {
 
     @RequestMapping({"","/", "/index"})      //when we go to these URLs, getIndexPage() is called
     public String getIndexPage() {
+        System.out.println("getIndexPage() called OK omg!");
         return "index";                             //will try to go against a Thymeleaf template index
     }
 }
